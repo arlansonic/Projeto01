@@ -1,0 +1,475 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+/*Boot CSS*/
+
+
+.html,body{
+	/*overflow-x: hidden;*/ /*Tem que tirar caso queira ativar o  Scrool 
+	de rolagem com Jquery*/
+	height: 100%;
+}
+
+.img{
+	width: 100%;
+	max-width: 400px;
+}
+
+.center{
+	max-width: 1280px;
+	padding: 0 2%;
+	margin: 0 auto;
+}
+
+.w33{
+	width: 33.3%;
+	padding: 0 10px;
+}
+
+.w50{
+	padding: 0 10px;
+	width: 50%;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+.clear{
+	clear: both;
+}
+
+/*Estilização do Site*/
+
+header{
+	padding: 20px 0;
+	background: #3D437A ;
+
+	
+}
+
+header .logo{
+	font-size: 25px;
+	font-weight: 300;
+	text-transform: uppercase;
+	color: white;
+}
+
+.logo a{
+	text-decoration:  none;
+	color: white;
+}
+
+.mobile{
+	display: none;
+}
+
+nav.desktop ul{
+	position: relative;
+	top: 6px;
+	list-style-type: none;
+}
+
+nav.desktop li{
+	font-weight: 300;
+	font-size: 15px;		
+	padding: 0 30px;
+	text-transform: uppercase;
+	display: inline-block;
+
+}
+
+nav.desktop a{
+	color: white;
+	text-decoration: none;
+
+}
+
+section.banner-container{
+	width: 100%;
+	height: 600px;
+	/*background-size: cover;*/
+	/*background-image: url('../Imagens/IOT.jpg');*/ /*Foi tirado pois tive que adicionar
+	Slide na Home*/
+	position: relative;
+	
+}
+
+.banner-single{
+	position: absolute;
+	left: 0;
+	top: 0;
+	/*z-index: 1;*/
+	width: 100%;
+	height: 100%;
+	display: none;
+	background-size: cover;
+	background-position: center;
+}
+
+.overlay{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background-color: rgba(0,0,0,0.1);
+}
+
+section.banner-container form{
+	width: 93%;
+	max-width: 600px;
+	z-index: 3;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+	/*border: border-box;*/
+	border: 0;
+
+}
+
+section.banner-container form h2{
+	color: #00331a;
+	font-weight: 300;
+	font-size: 30px;
+	text-align: center;
+
+
+}
+
+section.banner-container form input[type=email]{
+
+	width: 100%;
+	height: 66px;
+	background: white;
+	color: #333;
+	font-size: 22px;
+	padding-left: 10px;
+	margin-top: 10px;
+	border: 0;
+}
+
+section.banner-container form input[type=submit]{
+
+	width: 100%;
+	height: 66px;
+	background: #00C59E;
+	color: white;
+	font-size: 22px;
+	padding-left: 10px;
+	margin-top: 10px;
+	cursor: pointer;
+	border: 0;
+}
+
+section.descricao-autor{
+	padding: 40px 0;
+}
+
+section.descricao-autor h2{
+	font-size: 25px;
+	font-weight: 400;
+	color: #444;
+	text-align: center;
+}
+
+section.descricao-autor p{
+	font-size: 16px;
+	color: #444;
+	margin-top: 10px;
+	text-align: justify;	
+}
+
+section.especialidades{
+	padding: 40px 0;
+	background: #E2E2E2;
+	text-align: center;
+}
+
+section.especialidades,.title h2{
+	font-size: 20px;
+	font-weight: 400;
+	text-align: center;
+	color: #999;
+}
+
+.box-especialidade{
+	margin: 40px 0;
+	padding: 0 30px;
+	text-align: center;
+}
+
+.box-especialidade h3{
+	color: #404580;
+	font-size: 39px;
+	text-align: center;
+}
+
+.box-especialidade h4{
+	font-weight: 300;
+	color: #BABABA;
+	font-size: 25px;
+}
+
+.box-especialidade p{
+	color: #444;
+	font-size: 15px;
+	margin-top: 10px;
+}
+
+section.extras{
+	padding: 30px 0;
+	background: #404580;
+}
+
+.servicos-container,.depoimentos-container{
+	padding: 0 50px;
+}
+
+section.extras .title{
+	color: white;
+	font-weight: 300;
+	font-size: 25px;
+	margin-bottom: 15px;
+}
+
+.depoimento-single{
+	padding: 15px 0;
+	border-bottom: 1px solid #5056A0;
+}
+
+p.depoimento-descricao{
+	font-size: 15px;
+	color: white;
+	font-weight: 300;
+}
+p.nome-autor{
+	font-size: 15px;
+	color: white;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+.servicos ul{
+	margin: 20px 0;
+	/*list-style-position: inside;*/
+}
+
+.servicos li{
+	margin-bottom: 15px;
+	font-size: 15px;
+	color: white;
+	font-weight: 300;
+}
+
+footer{
+	background: #313462;
+	padding: 30px 0;
+}
+
+
+footer.fixed{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+footer p{
+	color: white;
+	text-align: center;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+
+
+
+section.erro-404 h2{
+	text-align: center;
+	color: #444;
+	font-weight: 400;
+	font-size: 28px;
+	border-top: 2px solid #444;
+}
+
+section.erro-404 p{
+	margin-top: 8px;
+	text-align: center;
+	font-size: 16px;
+	color: #444;
+	font-weight: 300;
+}
+
+section.erro-404 a{
+	color: #444;
+}
+
+
+.wraper-404{
+	transform: translateY(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+	width: 100%;
+	left: 0;
+	padding: 0 2%;
+	max-width: 1280px;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+}
+
+.bullets{
+	z-index: 5;
+	bottom: 10px;
+	left: 50%;
+	transform:  translateX(-50%);
+	position: absolute;
+}
+
+.bullets span{
+	margin: 0 10px;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	cursor: pointer;
+	background-color: #222;
+}
+
+.bullets span.active-slider{
+	background: white;
+}
+
+@media screen and (max-width: 768px){
+
+	.img{
+		float: none !important;
+		display: block;
+		margin: 0 auto;
+		
+	}
+
+
+	.w50{
+		width: 100%;
+		padding: 20px;
+	}
+
+	.w33{
+		width: 100%;
+		padding: 20px;
+	}
+
+	.box-especilidade{
+		padding: 40px 20px;
+		margin: 0;
+	}
+}
+
+
+section erro-404{
+	min-height: 600px;
+	padding: 30px 0;
+}
+
+#map{
+	width: 100%;
+	height: 400px;
+}
+
+.contato-container{
+	padding: 40px 0;
+	text-align: center;
+	height: 500px;
+}
+
+.contato-container input[type="text"]{
+	margin: 8px 0;
+	width: 100%;
+	height: 40px;
+	border: 1px solid #ccc;
+	padding-left: 8px;
+	font-size: 16px;
+	color: #444;
+	max-width: 500px;
+
+}
+
+.contato-container textarea{
+	padding: 8px;
+	margin: 8px 0;
+	width: 100%;
+	height: 40px;
+	border: 1px solid #ccc;
+	padding-left: 8px;
+	font-size: 16px;
+	color: #444;
+	max-width: 500px;
+	resize: vertical;
+}
+
+.contato-container input[type="submit"]{
+	background: #00C59E;
+	width: 140px;
+	height: 40px;
+	color: white;
+	border: none;
+	cursor: pointer;
+
+}
+
+@media screen and (max-width: 700px){
+
+	nav.desktop{
+		display: none;
+	}
+
+
+	nav.mobile{
+		display: block;
+	}
+
+	.botao-menu-mobile{
+		font-size: 20px;
+		cursor: pointer;
+		color: white;
+		padding: -10px;
+	}
+
+	nav.mobile ul{
+		top: 55px;
+		z-index: 3;
+		position: absolute;
+		left: 0;
+		width: 100%;
+		display: block;
+		text-align: center;
+	}
+
+	nav.mobile li{
+		font-weight: 300;
+		width: 100%;
+		display: block;
+		background: white;
+		border-bottom: 1px solid #ccc;
+		font-size: 17px;
+		padding: 8px 0;
+	}
+
+	nav.mobile li a{
+		display: block;
+		color: #444;
+		text-decoration: none;
+	}
+}
